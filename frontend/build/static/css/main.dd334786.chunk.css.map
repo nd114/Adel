@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACE,QAAS,CACT,4BACF,CAOA,oBAJE,QAAS,CACT,SAMF","file":"main.dd334786.chunk.css","sourcesContent":["body {\r\n  margin: 0;\r\n  font-family: Arial, sans-serif;\r\n}\r\n\r\nh1, h2, h3, h4, h5, h6 {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\np {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n"]}

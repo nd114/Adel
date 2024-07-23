@@ -43,7 +43,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/users/register', formData);
+      const response = await axios.post('adel01.herokuapp.com/api/users/register', formData);
       console.log(response.data);
       alert('Registration successful!');
     } catch (error) {
@@ -64,7 +64,7 @@ function App() {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:5000/api/ratings', ratingData, {
+      const response = await axios.post('http://adel01.herokuapp.com/api/ratings', ratingData, {
         headers: {
           'x-auth-token': token,
         },
@@ -80,10 +80,10 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const tasksResponse = await axios.get('http://localhost:5000/api/tasks');
+        const tasksResponse = await axios.get('http://adel01.herokuapp.com/api/tasks');
         setTasks(tasksResponse.data);
 
-        const topBusinessesResponse = await axios.get('http://localhost:5000/api/ratings/top-businesses');
+        const topBusinessesResponse = await axios.get('http://adel01.herokuapp.com/api/ratings/top-businesses');
         setTopBusinesses(topBusinessesResponse.data);
       } catch (error) {
         console.error('Error fetching data:', error);
